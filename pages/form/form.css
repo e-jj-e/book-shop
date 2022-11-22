@@ -1,0 +1,210 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #161616;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper header {
+  width: 100%;
+}
+
+.wrapper header nav {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  letter-spacing: 0.2em;
+  font-size: 22px;
+}
+
+.wrapper header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper header nav ul li a {
+  text-decoration: none;
+  color: #686464;
+}
+
+.wrapper header nav ul :hover {
+  color: #c8c8c8;
+  cursor: pointer;
+}
+
+.wrapper header nav li.active a {
+  color: #c8c8c8;
+}
+
+.wrapper header .heading {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  color: #c7102e;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.wrapper header .heading h1 {
+  display: none;
+}
+
+.wrapper header .heading ul {
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 4rem;
+  font-weight: 500;
+}
+
+.wrapper main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper main .form-container {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  color: #4f4d4d;
+  background-color: #c8c8c8;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.wrapper main .form-container h2 {
+  text-align: center;
+}
+
+.wrapper main .form-container form {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  letter-spacing: 0.02rem;
+  line-height: 2rem;
+}
+
+.wrapper main .form-container form label {
+  width: 20%;
+}
+
+.wrapper main .form-container form input[type="number"], .wrapper main .form-container form input[type="text"] {
+  width: 60%;
+  margin-right: 0px;
+  float: right;
+  padding: 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.03rem;
+  height: 24px;
+  border: none;
+}
+
+.wrapper main .form-container form input[type="radio"] {
+  font-size: 10px;
+}
+
+.wrapper main .form-container form input#buy {
+  float: right;
+  bottom: 65px;
+  position: relative;
+}
+
+.wrapper main .form-container form input#buy:hover {
+  cursor: pointer;
+  background-color: #292828;
+  color: #ff3c00;
+  font-weight: 900;
+  letter-spacing: 0.07rem;
+}
+
+.wrapper main .form-container form input#buy:active {
+  -webkit-box-shadow: -1px 1px 5px 2px rgba(110, 94, 94, 0.75);
+          box-shadow: -1px 1px 5px 2px rgba(110, 94, 94, 0.75);
+}
+
+.wrapper main .form-container form input#buy:disabled {
+  background-color: #8d8989;
+  color: #faf7f7;
+}
+
+.wrapper main .form-container form input[type="submit"] {
+  width: 100px;
+  height: 34px;
+  font-size: 18px;
+  background-color: red;
+  border: none;
+  border-radius: 12px;
+  letter-spacing: 0.04rem;
+  color: #3c3b3b;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.wrapper footer {
+  width: 100%;
+}
+
+.wrapper footer p {
+  font-size: 10px;
+  color: #5d5a5a;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  letter-spacing: 0.18rem;
+}
+/*# sourceMappingURL=form.css.map */

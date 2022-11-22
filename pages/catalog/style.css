@@ -1,0 +1,286 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #161616;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper header {
+  width: 100%;
+}
+
+.wrapper header nav {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  letter-spacing: 0.2em;
+  font-size: 22px;
+}
+
+.wrapper header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper header nav ul li a {
+  text-decoration: none;
+  color: #686464;
+}
+
+.wrapper header nav ul :hover {
+  color: #c8c8c8;
+  cursor: pointer;
+}
+
+.wrapper header nav li.active a {
+  color: #c8c8c8;
+}
+
+.wrapper header .heading {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  color: #c7102e;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.wrapper header .heading h1 {
+  display: none;
+}
+
+.wrapper header .heading ul {
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 4rem;
+  font-weight: 500;
+}
+
+.wrapper main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper main .books-catalog {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #c8c8c8;
+}
+
+.wrapper main .books-catalog ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-row-gap: 60px;
+  color: #494747;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+}
+
+.wrapper main .books-catalog ul li {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.wrapper main .books-catalog ul li .book-cover img {
+  width: 280px;
+  height: 350px;
+  border: 1px solid #979494;
+}
+
+.wrapper main .books-catalog ul li .book-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.wrapper main .books-catalog ul li .book-info .book-shortcut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
+  width: 280px;
+}
+
+.wrapper main .books-catalog ul li .book-info .book-shortcut p {
+  line-height: 2em;
+  font-size: 20px;
+}
+
+.wrapper main .books-catalog ul li .book-info .value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper main .books-catalog ul li .book-info .value p {
+  font-size: 11px;
+  text-decoration: none;
+  color: #494747;
+}
+
+.wrapper main .books-catalog ul li .book-info .value p:hover {
+  cursor: pointer;
+}
+
+.wrapper main .books-catalog ul li .book-info .value button {
+  width: 92px;
+  height: 24px;
+  color: #a5a0a0;
+  border: none;
+  background-color: #585656;
+  border-radius: 12px;
+  margin-top: -12px;
+  font-size: 11px;
+  letter-spacing: 0.05rem;
+}
+
+.wrapper main .books-catalog ul li .book-info .value button:hover {
+  cursor: pointer;
+  color: #494747;
+  background-color: #979494;
+}
+
+.wrapper main .popup {
+  display: block;
+  width: 50%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  background-color: #161616;
+  color: #b0a6a6;
+  position: fixed;
+  -webkit-box-shadow: 0px 1px 6px 1px rgba(110, 94, 94, 0.93);
+          box-shadow: 0px 1px 6px 1px rgba(110, 94, 94, 0.93);
+  top: calc(50% - 25vh);
+  left: calc(50% - 25vw);
+}
+
+.wrapper main .popup .popup-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: justify;
+  font-size: 17px;
+  letter-spacing: 0.09rem;
+  line-height: 1.2em;
+}
+
+.wrapper main .popup .popup-close-btn {
+  color: red;
+  font-weight: 900;
+  font-size: 28px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 14px;
+  padding-top: 0px;
+}
+
+.wrapper main .popup .popup-close-btn :hover {
+  cursor: pointer;
+}
+
+.wrapper main .popup .popup-close-btn :active {
+  color: #eae7e7;
+}
+
+.wrapper .hidden {
+  display: none;
+}
+
+.wrapper footer {
+  width: 100%;
+}
+
+.wrapper footer p {
+  font-size: 10px;
+  color: #5d5a5a;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  letter-spacing: 0.18rem;
+}
+/*# sourceMappingURL=style.css.map */

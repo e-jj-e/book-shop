@@ -1,0 +1,270 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #161616;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper header {
+  width: 100%;
+}
+
+.wrapper header nav {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  letter-spacing: 0.2em;
+  font-size: 22px;
+}
+
+.wrapper header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper header nav ul li a {
+  text-decoration: none;
+  color: #686464;
+}
+
+.wrapper header nav ul :hover {
+  color: #c8c8c8;
+  cursor: pointer;
+}
+
+.wrapper header nav li.active a {
+  color: #c8c8c8;
+}
+
+.wrapper header .heading {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  color: #c7102e;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.wrapper header .heading h1 {
+  display: none;
+}
+
+.wrapper header .heading ul {
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 4rem;
+  font-weight: 500;
+}
+
+.wrapper main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper main .orders {
+  width: 95%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  background-color: #c8c8c8;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.wrapper main .orders h2 {
+  text-align: center;
+  color: #494747;
+}
+
+.wrapper main .orders ol {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  color: #494747;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  font-size: 18px;
+  letter-spacing: 0.04rem;
+  line-height: 1.4em;
+  margin: 0 auto;
+}
+
+.wrapper main .orders ol li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper main .orders ol li .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.wrapper main .orders ol li .price button {
+  width: 86px;
+  height: 23px;
+  border: none;
+  border-radius: 12px;
+  font-size: 11px;
+  letter-spacing: 0.05rem;
+  color: #c3c1c1;
+  background-color: #494747;
+}
+
+.wrapper main .orders ol li .price button:hover {
+  cursor: pointer;
+  color: #494747;
+  background-color: #979494;
+}
+
+.wrapper main .orders ol li .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.wrapper main .orders ol li .info p {
+  font-size: 14px;
+}
+
+.wrapper main .orders .order-total-btn {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  float: left;
+}
+
+.wrapper main .orders .order-total-btn .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+
+.wrapper main .orders .order-total-btn .total h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.wrapper main .orders .order-total-btn .total p {
+  font-size: 20px;
+  line-height: 2rem;
+  color: #494747;
+  letter-spacing: 0.05rem;
+}
+
+.wrapper main .orders .order-total-btn .continue-btn button {
+  border: none;
+  width: 90px;
+  height: 28px;
+  font-size: 11px;
+  border-radius: 12px;
+  letter-spacing: 0.09rem;
+  color: #c3c1c1;
+  background-color: #494747;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.wrapper main .orders .order-total-btn .continue-btn button:hover {
+  cursor: pointer;
+  color: #494747;
+  background-color: red;
+}
+
+.wrapper footer {
+  width: 100%;
+}
+
+.wrapper footer p {
+  font-size: 10px;
+  color: #5d5a5a;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  letter-spacing: 0.18rem;
+}
+/*# sourceMappingURL=style.css.map */
